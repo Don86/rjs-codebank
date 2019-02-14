@@ -13,8 +13,8 @@ class App extends React.Component{
 }
 ```
 
-* The `render () {}` method is required if `App` is declared as a class (as opposed to a functional component).
-* When passing `props` to a class component, you'll have to use `this.props.whatever`. You know why.
+* The `render () {}` method is required if `App` is declared as a class (as opposed to a functional component). I'm not sure if the `constructor(){}` is required for passing props. It's definitely required for passing state; so maybe always define it anyway?
+* When passing `props` to a class component, you'll have to use `this.props.whatever`. 
 
 ## Conditional Rendering
 
