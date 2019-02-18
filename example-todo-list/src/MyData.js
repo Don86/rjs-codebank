@@ -1,4 +1,4 @@
-const MyData = [
+const todosData = [
     {
         id: 1,
         text: "Take out the trash",
@@ -26,4 +26,4 @@ const MyData = [
     }
 ]
 
-export default MyData
+export default todosData
