@@ -8,6 +8,15 @@ DEF: Methods that can be executed at particular times.
 2. **Update** - If props or state are changed, an update of the component is performed. This means that the component has to be re-rendered.
 3. **Unmount** - When a component is removed from the DOM.
 
+### List
+
+* `componentWillMount`: procs right before initial rendering
+* `componentDidMount`: procs immediately after initial rendering
+* `componentWillReceiveProps`: Procs right before receiving props.
+* `shouldComponentUpdate`: procs before rendering, after receiving new props or state. You can return false to prevent rendering.
+* `componentWillUpdate`: procs before rendering, after receiving new props or state. Seems very similar to `shouldComponentUpdate`.
+* `componentDidUpdate`: after component's update are flushed to DOM
+
 ### Examples
 
 ```

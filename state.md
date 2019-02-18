@@ -8,20 +8,15 @@ this.props.something = "some-new-value"
 ```
 
 * You can pass `state` from a parent to a child
+* You can only assign state values directly (using `this.state = {...}` in the constructor. Everywhere else, you'll have to use `setState()`)
 * State creation syntax example (no state changes):
 
 ```
-import React from "react"
-
 class App extend React.Component {
     // def constructor
     constructor() {
-        // call to parent class to inherit
         super()
-        // instantiate state
-        this.state = {
-            answer: "Yes"
-        }
+        this.state = {answer: "Yes"}
     }
 
     render() {
@@ -29,14 +24,11 @@ class App extend React.Component {
             <div>
                 <h1>Is state important to know? {this.state.answer}</h1>
             </div>
-            )
-
-    }
-
+            )}
 }
 ```
 
-## Changing State
+## Changing State: `setState()`
 
 * Changing state: it's like clothing. When you change clothing, you don't repaint your current clothes. You take off whatever you're wearing, and put on something new. Put the state changing function into `this.setState()`. Full example:
 * The `setState()` method enqueues changes to the component state to tell React that this component and its children need to be re-rendered.
