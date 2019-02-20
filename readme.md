@@ -15,3 +15,5 @@ Excellent free VSchool course: https://scrimba.com/g/glearnreact
 * Life cycle methods: https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1
 * About promises: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
 * `fetch` method: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
+
+* Check this out: openweather api

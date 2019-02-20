@@ -28,7 +28,7 @@ class App extend React.Component {
 }
 ```
 
-## Changing State: `setState()`
+## Changing State with `setState()`
 
 * Changing state: it's like clothing. When you change clothing, you don't repaint your current clothes. You take off whatever you're wearing, and put on something new. Put the state changing function into `this.setState()`. Full example:
 * The `setState()` method enqueues changes to the component state to tell React that this component and its children need to be re-rendered.
@@ -46,7 +46,6 @@ class App extends React.Component {
             count: 0
         }
         // bind the handleClick method
-        // See notes on binding below
         this.handleClick = this.handleClick.bind(this)
     }
 
