@@ -17,3 +17,5 @@ Excellent free VSchool course: https://scrimba.com/g/glearnreact
 * `fetch` method: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
 
 * Check this out: openweather api
+* Deploy to github pages!
+* Similar usecase (but simpler): https://www.reddit.com/r/javascript/comments/83i8ov/i_made_an_a_simple_react_app_that_queries_an_api/

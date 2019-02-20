@@ -30,7 +30,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      zoomDomain: {x: [new Date(2017, 1, 1), new Date(2018, 12, 1)]},
+      zoomDomain: {x: [new Date(2017, 1, 1), new Date(2019, 12, 1)]},
       plotData: {}
     }
     this.handleZoom = this.handleZoom.bind(this)
