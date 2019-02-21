@@ -19,3 +19,10 @@ Excellent free VSchool course: https://scrimba.com/g/glearnreact
 * Check this out: openweather api
 * Deploy to github pages!
 * Similar usecase (but simpler): https://www.reddit.com/r/javascript/comments/83i8ov/i_made_an_a_simple_react_app_that_queries_an_api/
+
+## Sandboxes
+
+Where I fiddle around with different libraries to see what's best.
+* `test-stock-price-api`: scratch code to GET from Alpha Vantage stock price API
+* `test-victory`: initially tried the `victory` library, but could never get it too work (didn't display properly). Final form in there uses `react-charts-js2`, which I'm rather afraid of because it doesn't look very well-supported, and doesn't have good documentation.
+* `test-d3-recat`: D3 inside reactJS. 

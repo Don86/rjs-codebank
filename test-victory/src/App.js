@@ -34,7 +34,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      zoomDomain: {x: [new Date(2000, 1, 1), new Date(2019, 12, 1)]},
+      ticker: "",
       plotData: {
         labels: [],
         datasets: [{
@@ -48,12 +48,12 @@ class App extends React.Component {
 
   // API call to alpha vantage
   componentDidMount() {
-    const ticker = "SPY"
+    const ticker = "VTSAX"
     const api_key = "EEKL6B77HNZE6EB4"
     fetch("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol="+ticker+"&apikey="+api_key)
     .then(response => response.json())
     .then(data => parseData(data["Monthly Time Series"]))
-    .then(data =>{this.setState({plotData:data})})
+    .then(data =>{this.setState({plotData:data, ticker:ticker})})
     .then(data => console.log(data))
   }
 
@@ -62,25 +62,9 @@ class App extends React.Component {
   }
 
   render() {
-    const testData = [
-      { newDate: new Date(2017, 1, 1), "4. close": 125 },
-      { newDate: new Date(2017, 3, 1), "4. close": 257 },
-      { newDate: new Date(2017, 6, 1), "4. close": 345 },
-      { newDate: new Date(2017, 9, 1), "4. close": 515 },
-      { newDate: new Date(2018, 12, 1), "4. close": 132 },
-      { newDate: new Date(2018, 3, 1), "4. close": 305 },
-      { newDate: new Date(2018, 6, 1), "4. close": 270 },
-      { newDate: new Date(2018, 9, 1), "4. close": 300 },
-      { newDate: new Date(2018, 12, 1), "4. close": 320 },
-    ]
-
-    let localPlotData = this.state.plotData
-    console.log(localPlotData)
-
     return (
-      //Try React chart js2
       <div>
-        <h1></h1>
+        {this.state.ticker.length == 0 ? <h1>Loading...</h1> : <h1>{this.state.ticker}</h1>}
         <Line data={this.state.plotData} />
       </div>
     )
