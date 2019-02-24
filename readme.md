@@ -25,4 +25,4 @@ Excellent free VSchool course: https://scrimba.com/g/glearnreact
 Where I fiddle around with different libraries to see what's best.
 * `test-stock-price-api`: scratch code to GET from Alpha Vantage stock price API
 * `test-victory`: initially tried the `victory` library, but could never get it too work (didn't display properly). Final form in there uses `react-charts-js2`, which I'm rather afraid of because it doesn't look very well-supported, and doesn't have good documentation.
-* `test-d3-recat`: D3 inside reactJS. 
+* `test-d3-react`: D3 inside reactJS. 
